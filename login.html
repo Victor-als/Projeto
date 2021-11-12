@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Página de login </title>
+    <script src="./java script/login.js" defer></script>
+</head>
+
+<body>
+    <div id="beneficios">
+        <p>Entregamos em toda região de Guarulhos</p>
+        <p> Todos os produtos com 5% de desconto no PIX</p>
+        <p>Compras acima de 100 reais ganham brindes</p>
+    </div>
+        <input type="checkbox" id="check">
+        <label id="icone_menu" for="check"><img src='imagens/icones/menu.png'></label>
+            <div class='barra_menu'>
+                <nav id='itens_menu'>
+                    <a href='index.html' rel='prev'><div class='link'>Home</div></a>
+                    <a href='produtos.html' rel='next'><div class='link'>Produtos</div></a>
+                    <a href=''><div class='link'>Encomendas</div></a>
+                    <a href=''><div class='link'>Meu Perfil</div></a>
+                    <a href=''><div class='link'>Fale Conosco</div></a>
+                </nav>
+            </div>
+    <header>
+        <div id='subheader'>
+            <div id='logo'>
+                <picture>
+                    <source media="(max-width:550px)" srcset="imagens/logo150px.jpg" type="image/jpg">
+
+                    <source media="(max-width:768px)" srcset="imagens/logo200px.jpg" type="image/jpg">
+                    
+                    <img src='imagens/logo200px.jpg' alt='Logo Dulce Amor'>
+                </picture>
+            </div>
+            <label for='barra_pesquisa'></label>
+                <div id="barra_pesquisa">
+                    <div id='frase'>
+                        <h1>Adoçando a vida!</h1>		
+                    </div> 
+                    <form method="post">
+                        <input type="text" placeholder=" faça uma busca ">
+                        <button>	
+                            <img src='imagens/icones/lupa26px.png'>
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            
+            <div id="rede_social">
+                <br/>
+                    <h2 align="center">Tire suas dúvidas</h2>
+                <br/>
+                <div id='icones_rede_social'>
+                    <a href="https://www.instagram.com/dulceamor__ofc/" target="_blank">	
+                    <img src='imagens/instal.png' height="35"></a>
+                    <h2>|</h2>
+                    <a href="https://api.whatsapp.com/message/3E2ZZUYJNA4QC1" target="_blank">	
+                    <img src='imagens/wppl.png' height="35"></a>
+                    <h2>|</h2>
+                    <a href="" target="_blank">	
+                    <img src='imagens/face.png' height="31"></a>
+                </div>
+                <div>
+                    <br/>
+                    <h3 align="center">Telefone: (11) 2532-5593</h3>
+                    <br/>
+                    <h3 align="center">Celular: (11) 96980-5573</h3>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form name="form1" action="verificarlogin.jsp" method="post">
+            
+            <h2>Entrar</h2>
+
+            <div id="msgerror"></div>
+
+            <section class="label-float">
+                <input type="text" id="email" name='txtemail' placeholder="" required  >
+                <label id="userLabel"  for="email">Email:</label>
+            </section>
+
+            <section class="label-float">
+                 <input type="password" id="ComfirmSenha" name='txtsenha' placeholder="" required>
+                 <label id="senhaLabel" for="ComfirmSenha">Senha:</label>
+
+            </section>
+        
+            <section class="justify-center">
+                <button type="submit" onclick="entrar()" value="Gravar" >Entrar</button>
+            </section>
+
+           <div class="justify-center">
+            <hr>
+           </div>
+
+            <span> Não tem uma conta? 
+                <a href="cadastro.html"> cadastre-se</a>
+            </span>
+        
+        </form>
+    </main>
+    <footer >
+        <div class='barra'></div>
+        <div class="rodape_container">
+            <div>
+                <div class="infos">
+                    
+                    <div class="cont">
+                        <h3>Entre em contato por nosso Email comercial:	
+                        </h3>
+                        <br/>
+                        <p>dulceamor@gmail.com</p>
+                        <br/>
+                        <h3>Horários para retirada</h3>
+                        <p>
+                            Segunda à SextaDas 
+                            8h às 18h
+                            Sábado 
+                            das 8h às 17h
+                        </p>
+                    </div>
+                    
+                    <div class='endereco'>
+                         <h3>Endereço</h3>
+                         <br/> <address>Rua maraja N° 702, Vila Rio - CEP: 12345-060</address>
+                    </div>
+
+                    <div class='pag'>
+                        <h3>Metodos de Pagamento</h3>
+                        <img src='imagens/formasdepag.png' width="200px">
+                    </div>
+            </div>
+        </div>
+            <div class="copyright">
+            <p>
+              Copyright © Dulce Amor 2021. Todos os direitos reservados.
+            </p>
+        </div>
+
+      </footer>   
+</body>
+</html>

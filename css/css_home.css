@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	top: 0;
+	font-family:montserrat, verdana, arial;
+}
+body{
+	background-color: #ebbbad;
+}
+#check{
+	display:none;
+}
+#icone_menu{
+	cursor: pointer;
+	padding: 2% 1%; 
+    position: absolute;
+	z-index: 2;
+    margin:0px 0px 0px 0px;
+}
+.barra_menu{
+	background-color: rgb(235, 235, 235);
+	height: 150%;
+	width: 300px;
+	position: absolute;
+	transition: all .2s linear;
+	opacity: 0.9;
+	left:-300px;
+	z-index: 1;
+}
+#itens_menu{
+	position: sticky;
+}
+nav{
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+nav a{
+	text-decoration: none;
+}
+.link{
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+	font-weight:bolder;
+	font-family: montserrat;
+	font-size: 12pt;
+	color: #ebbbad;
+	transition: all .2s linear;
+	border-bottom: 2px solid black;
+	opacity: 0.9;
+	margin-top: 200px;
+}
+.link:hover{
+	background-color: #ebbbad;
+	color: white;
+}
+#check:checked ~ .barra_menu{
+	transform: translateX(300px);
+}
+#check:checked ~ .barra_menu nav a .link{
+	opacity: 1;
+	margin-top: 0px;
+	transition-delay: .1s;
+}
+Header{
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	justify-content: center;	
+}
+#subheader{
+	display: flex;
+	align-items: center;
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#logo{
+	margin: auto;
+}
+#logo img{
+}
+#frase{
+	position: relative;
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: Brush Script MT;	
+	font-size: 18pt;
+	color: #855151;
+}
+#frase h1{
+	font-family: Brush Script MT;
+}
+#barra_pesquisa{
+	position: relative;
+}
+#barra_pesquisa form{
+	display: flex;
+    width: 100%;
+	align-items: center;	
+}
+#barra_pesquisa input{
+	align-items: center;
+	position: relative;
+    width: 420px;
+	height: 35px;
+    margin: auto;
+    border-radius: 5px 0 0 5px;
+}
+#barra_pesquisa button{
+	position: relative;
+    width: 10%;
+	height: 41px;
+    background-color:#ebbbad;
+    color: #fff;
+    cursor: pointer;
+    border-radius:0 5px 5px 0;
+}
+#barra_pesquisa button img{
+	height: 26px;
+}
+#rede_social{
+	justify-content: center;	
+	margin-left:auto;
+	margin-right:auto;
+	font-size: 10pt;
+	font-family:montserrat, verdana, arial;
+	color:gray;
+}
+#icones_rede_social{
+	justify-content: center;
+	display: flex ;
+}
+#icones_rede_social h2{
+	color: white;
+}
+#beneficios{ 
+	justify-content: center;
+	align-items: center;
+	background-color:#ebbbad;
+	width: 100%;
+	display: flex;
+	margin: auto;
+}
+#beneficios p {
+	display: flex;
+	text-align: center;
+	font-size:13pt;
+	font-family: montserrat, verdana, arial;
+	font-weight:bolder;
+	color: white;
+    justify-content:center;
+	margin: auto;
+}
+#slide{
+	box-sizing: border-box;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	align-content: center;
+	height: 20%;
+	width: 80%;
+	margin-left:10%;
+	margin-right:10%;
+}
+.carrossel{	
+	align-items: center;
+	justify-content:center;	
+	box-shadow: 2px 2px 4px black;
+	overflow: hidden;
+	width:1500px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+.container{
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	transform: translateX(0);
+}
+.imgc{
+	object-fit: cover;
+	width: 500px;
+	height: 500px;
+}
+section{
+	justify-content: center;
+	background-color:#ebbbad;
+	font-family: montserrat, verdana, arial;
+}
+#destaquetitulo{
+	text-align: center;
+	background-color:#ffffff;
+	margin-top: 30px;
+	height: 50px;
+	width: 100%;
+	color: #855151;
+	font-size: 20pt;
+}
+.destaque{
+	width: 100%;
+	justify-content: center;
+	margin-top: 10px;
+	margin-left:auto;
+	margin-right:auto;
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 6fr));
+	grid-gap:50px;
+}
+.imagemdestaque{	
+	margin: auto;
+	justify-content: center;
+	background-color: white;
+	width: 390px;
+	border-radius: 10px;
+}
+.imagemdestaque img{
+	display: block;
+	object-fit: cover;
+
+	justify-content: center;
+	margin-top:4%;	
+	margin-left:auto;
+	margin-right:auto;
+
+	border-radius: 10px;
+	width: 370px;
+	height:350px;
+}
+.imagemdestaque h2{
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 15pt;
+	font-family: montserrat, verdana, arial;
+	font-weight:bolder;
+	color: #855151;
+	white-space: pre-line;
+}
+.barra{
+	background-color: #855151;
+	width: 100%;
+	height: 15px;
+}
+footer{
+    color: white;
+	background-color: #fff;
+	width: 100%;
+	height: 300px;
+	justify-content: center;
+	text-align: center;
+	margin-top: 15px;
+
+}
+footer h3{
+	font-size: 15pt;
+	margin: auto;
+	margin-top: 5px;
+	text-decoration: underline;
+}
+.rodape_container{
+	margin: auto;
+}
+.infos {
+	font-size: 14pt;
+	color:#855151;
+	width: 100%;
+	font-weight:bolder;
+	display: flex;
+	margin: auto;
+	
+}
+.pag{
+	margin: auto;
+	margin-top: 0px;
+}
+.endereco{
+	margin: auto;
+	margin-top: 0px;
+	
+}
+.cont{
+	margin: auto;
+	margin-top: 0px;
+}
+
+.cont p{ 
+	font-style:italic;
+	white-space: pre-line;
+}
+.copyright {
+	background-color:#855151;
+	color: #fff; 
+	font-weight:bold;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 736px){
+
+	header{
+		justify-content:center;
+		width: 100%;
+	}
+	#subheader{
+		width: 100%;
+	}
+	#beneficios{
+		display: block;
+		width: 100%;
+	}
+	#beneficios p{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 10pt;
+		width: 100%;
+		text-decoration: underline;
+	}
+	#subheader{
+		display: block;
+		justify-content:center;
+		
+	}
+	#logo img{
+		display: block;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.imagemdestaque{	
+		justify-content: center;
+		background-color: white;
+		width: 330px;
+		border-radius: 10px;
+		margin: auto;
+	}
+	.imagemdestaque img{
+		display: block;
+		object-fit: cover;
+	
+		justify-content: center;
+		margin-top:4%;	
+		margin-left:auto;
+		margin-right:auto;
+	
+		border-radius: 10px;
+		width: 300px;
+		height:250px;
+	}
+	#barra_pesquisa input{
+		width: 100%;
+	}
+	#icone_menu{
+		cursor: pointer;
+		padding: 19% 1%; 
+		position: absolute;
+		z-index: 2;
+		margin:0px 0px 0px 0px;
+	}
+	nav{
+		width: 100%;
+		position: absolute;
+		top: 100px;
+	}
+	.carrossel{	
+	width:500px;
+	}
+		
+}
