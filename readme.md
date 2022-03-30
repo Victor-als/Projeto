@@ -1,4 +1,3 @@
 # Projeto 
 
-- Git init 
-- Git add 
+- Projeto feito em grupo, segundo semestre de ADS.
